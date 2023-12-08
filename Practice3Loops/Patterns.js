@@ -63,6 +63,13 @@ for (let i = 0; i < strN; i++) {
 // 1234
 // 12345
 
+for (let i = 1; i < 6; i++) {
+    let str = ""
+    for (let j = 1; j <= i; j++) {
+        str += j
+    }
+    console.log(str);
+}
 
 // Question-5
 
@@ -73,3 +80,15 @@ for (let i = 0; i < strN; i++) {
 //   CCCCC
 //  DDDDDDD
 // EEEEEEEEE
+
+let strL = 26
+for (let i = 0; i < strL; i++) {
+    let spc = ""
+    for (let j = (strL-2)-i; j >= 0; j--) {
+        spc += " ";
+    }
+    for (let k = 0; k < 2*i+1; k++) {
+        spc += String.fromCharCode(65+i)
+    }
+    console.log(spc);
+}
